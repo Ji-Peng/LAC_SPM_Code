@@ -1,0 +1,15 @@
+python gen_spm_new.py -numc 512 -nump 2 -nums 256 -coeff 8 -q 251 > sparse_mul_512_256_2.v
+python gen_spm_new.py -numc 1024 -nump 2 -nums 256 -coeff 8 -q 251 > sparse_mul_1024_256_2.v
+python gen_spm_new.py -numc 1024 -nump 2 -nums 384 -coeff 8 -q 251 > sparse_mul_1024_384_2.v
+
+python gen_spm_new.py -numc 512 -nump 4 -nums 256 -coeff 8 -q 251 > sparse_mul_512_256_4.v
+python gen_spm_new.py -numc 1024 -nump 4 -nums 256 -coeff 8 -q 251 > sparse_mul_1024_256_4.v
+python gen_spm_new.py -numc 1024 -nump 4 -nums 384 -coeff 8 -q 251 > sparse_mul_1024_384_4.v
+
+python gen_spm_new.py -numc 512 -nump 8 -nums 256 -coeff 8 -q 251 > sparse_mul_512_256_8.v
+python gen_spm_new.py -numc 1024 -nump 8 -nums 256 -coeff 8 -q 251 > sparse_mul_1024_256_8.v
+python gen_spm_new.py -numc 1024 -nump 8 -nums 384 -coeff 8 -q 251 > sparse_mul_1024_384_8.v
+
+python gen_spm_new.py -numc 512 -nump 16 -nums 256 -coeff 8 -q 251 > sparse_mul_512_256_16.v
+python gen_spm_new.py -numc 1024 -nump 16 -nums 256 -coeff 8 -q 251 > sparse_mul_1024_256_16.v
+python gen_spm_new.py -numc 1024 -nump 16 -nums 384 -coeff 8 -q 251 > sparse_mul_1024_384_16.v

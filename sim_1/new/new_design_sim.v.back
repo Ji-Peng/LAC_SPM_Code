@@ -1,0 +1,59 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 06/09/2020 10:50:28 AM
+// Design Name: 
+// Module Name: new_design_sim
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module new_design_sim(
+
+    );
+
+reg [7:0] poly_a;
+reg [1:0] poly_r;
+wire [7:0] poly_result;
+// wire bit1, bit2;
+// wire mask1;
+// wire mask2;
+// wire [7:0] temp1;
+// wire [7:0] temp2;
+// wire [7:0] temp3;
+// wire [7:0] temp4;
+// wire [7:0] temp5;
+// wire [7:0] temp6;
+// wire [7:0] temp7;
+// wire [7:0] temp8;
+
+new_design_prototype test(
+    .i_poly_a(poly_a),
+    .i_poly_r(poly_r),
+    .o_result(poly_result)
+    );
+
+initial
+begin
+    poly_a = 1'b1;
+    poly_r = 2'b11;
+    # 1000
+
+    poly_r = 2'b10;
+    # 1000
+
+    poly_r = 2'b01;
+end
+endmodule
